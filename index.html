@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/sheying.css"/>
+    <link rel="stylesheet" href="css/shutter.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="css/style1.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.min1.js"></script>
+	<script src="js/vue.js"></script>
+</head>
+<body>
+    <!--兽爷-->
+    <div class="a">
+        <div><img src="img/logo.png" alt=""/></div>
+        <nav>
+            <ul>
+                <li><a href="">官网首页<span>Home</span></a></li>
+                <li><a href="">形象照<span>Image</span></a></li>
+                <li><a href="">产品拍摄<span>Product</span></a></li>
+                <li><a href="">外景拍摄<span>Panorama</span></a></li>
+                <li><a href="">关于牧歌<span>About</span></a></li>
+                <li><a href="">拍摄流程<span>Process</span></a></li>
+                <li><a href="">动态知识<span>New</span></a></li>
+                <li><a href="">联系我们<span>Contact</span></a></li>
+            </ul>
+        </nav>
+    </div>
+    <!--萝卜兔-->
+    <div class="shutter">
+        <div class="shutter-img">
+            <a href="#" data-shutter-title="Iron Man"><img src="images/shutter_1.jpg" alt="#"></a>
+            <a href="#" data-shutter-title="Super Man"><img src="images/shutter_2.jpg" alt="#"></a>
+            <a href="#" data-shutter-title="The Hulk"><img src="images/shutter_3.jpg" alt="#"></a>
+            <a href="#" data-shutter-title="The your"><img src="images/shutter_4.jpg" alt="#"></a>
+        </div>
+        <ul class="shutter-btn">
+            <li class="prev"></li>
+            <li class="next"></li>
+        </ul>
+    </div>
+        <script src="js/jquery.min.js"></script>
+        <script src="js/velocity.js"></script>
+        <script src="js/shutter.js"></script>
+        <script>
+            $(function () {
+                $('.shutter').shutter({
+                    shutterW:1900, // 容器宽度
+                    shutterH: 900, // 容器高度
+                    isAutoPlay: true, // 是否自动播放
+                    playInterval: 3000, // 自动播放时间
+                    curDisplay: 3, // 当前显示页
+                    fullPage: false // 是否全屏展示
+                });
+            });
+        </script>
+    <!--扶无牌社-->
+    <div class="b">
+        <div class="ba">
+            <h3>我们的服务</h3>
+            <p>
+           慕格摄影，一个有态度的品牌，不忘初心将细节做到极致，用心服务每一位客户.
+            </p>
+        </div>
+        <div>
+            <ul class="picbox">
+                <li>
+                    <div class="shape">
+                        <a href="#" class="overlay round"></a>
+                        <div class="details">
+                            <span class="heading">形象照</span>
+                            <hr />
+                            <a href="#" class="button">VIEW</a>
+                        </div>
+                        <div class="bg"></div>
+                        <div class="base">
+                            <img src="img/1.jpg" alt="" />
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="shape">
+                        <a href="#" class="overlay hexagon"></a>
+                        <div class="details">
+                            <span class="heading">商业广告</span>
+                            <hr />
+                            <a href="#" class="button">VIEW</a>
+                        </div>
+                        <div class="bg"></div>
+                        <div class="base">
+                            <img src="img/2.jpg" alt="" />
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="shape">
+                        <a href="#"  class="overlay pentagon"></a>
+                        <div class="details">
+                            <span class="heading">视频拍摄</span>
+                            <hr />
+                            <a href="#" class="button">VIEW</a>
+                        </div>
+                        <div class="bg"></div>
+                        <div class="base">
+                            <img src="img/3.jpg" alt="" />
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="shape">
+                        <a href="#"  class="overlay pentagon"></a>
+                        <div class="details">
+                            <span class="heading">视频拍摄</span>
+                            <hr />
+                            <a href="#" class="button">VIEW</a>
+                        </div>
+                        <div class="bg"></div>
+                        <div class="base">
+                            <img src="img/3.jpg" alt="" />
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--安利心上-->
+   <div class="c">
+                <div class="ca">
+                   <h2>案例欣赏</h2>
+                    <span></span>
+                    <p>认真，是我们从不含糊的态度；每一次拍摄现场，我们紧张有序进行;</p>
+                    <p> 我们坚信：成功不是偶然，而是必然！只需把每一个细节做好!</p>
+                </div>
+                <div class="cb">
+                    <ul id="tab">
+                        <li v-for="name in names"><a href=""><span>{{name}}</span></a></li>
+                      
+                    </ul>
+                <div id="container">    
+                    <div class="cba" id="content1">
+                        <div><a href=""><img src="images/11.jpg" alt=""/></a></div>
+                        <div><a href=""><img src="images/11.jpg" alt=""/></a></div>
+                        <div><a href=""><img src="images/11.jpg" alt=""/></a></div>
+                        <div><a href=""><img src="images/14.jpg" alt=""/></a></div>
+                        <div><a href=""><img src="images/15.jpg" alt=""/></a></div>
+                        <div><a href=""><img src="images/16.jpg" alt=""/></a></div>
+                        <div><a href=""><img src="images/17.jpg" alt=""/></a></div>
+                        <div><a href=""><img src="images/18.jpg" alt=""/></a></div>
+                        <div><a href=""><img src="images/19.jpg" alt=""/></a></div>
+                        <div><a href=""><img src="images/20.jpg" alt=""/></a></div>
+                    </div>
+                </div>
+                </div>
+                <div class="cc">
+
+                </div>
+            </div>
+			<script src="js/index.js"></script>
+    <!--扶无留成-->
+    <div class="d">
+        <div class="da">
+            <h2>服务流程</h2>
+            <span></span>
+            <p>每一次成功的合作都是你我双方密切的沟通合作完成的，用心服务，用品质践行承诺</p>
+        </div>
+        <div class="db">
+            <img src="img/21.png" alt=""/>
+            <img src="img/22.png" alt=""/>
+            <img src="img/23.png" alt=""/>
+            <img src="img/24.png" alt=""/>
+            <img src="img/25.png" alt=""/>
+            <img src="img/26.png" alt=""/>
+        </div>
+    </div>
+    <div class="Choices">
+        <div class="Choices_text">
+            <div class="Choices_head">选择我们的五大理由</div>
+            <div class="Choices_content">
+                <div class="Choicesnext"><img src="images/Choicesnext.png" width="100%"></div>
+                <div class="Choices_banner">
+                    <ul>
+                        <li>
+                            <div class="Choices_left"><img src="images/Choices1.png" width="100%"></div>
+                            <div class="Choices_right">
+                                <h1></h1>
+                                <h2>TOP 1</h2>
+                                <p> 从需求到产品策划、拍摄，慕格摄影拥有全套专业的视觉服务体系，以精益求精的态度做到高效细致的服务</p>
+                                <div class="Choicesbut"><a onclick="interactive.openNtkf('0','')">专业服务体系</a></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="Choices_left"><img src="images/Choices1.png" width="100%"></div>
+                            <div class="Choices_right">
+                                <h1></h1>
+                                <h2>TOP 2</h2>
+                                <p> 慕格摄影用多年的视觉传播经验，熟悉掌握时尚视觉，赢得各大品牌、媒体、的好评，并建立长期合作关系</p>
+                                <div class="Choicesbut"><a onclick="interactive.openNtkf('0','')"></a></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="Choices_left"><img src="images/Choices1.png" width="100%"></div>
+                            <div class="Choices_right">
+                                <h1></h1>
+                                <h2>TOP 3</h2>
+                                <p> 一流的国内摄影服务团队，能够很好的根据客户的需求，完成整套的视觉策划方案及整体的流程把控，各部门分工明确，协同工作与进步</p>
+                                <div class="Choicesbut"><a onclick="interactive.openNtkf('0','')"></a></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/Choices.js"></script>
+    <!--志明渴虎-->
+    <div class="e">
+        <div class="ea">
+            <h3>知名客户</h3>
+            <span>Well-known customer</span>
+        </div>
+        <div class="eb">
+            <ul>
+                <li class="li1"><img src="images/31.png" alt=""/></li>
+                <li class="li1"><img src="images/32.png" alt=""/></li>
+                <li class="li1"><img src="images/33.png" alt=""/></li>
+                <li class="li1"><img src="images/34.jpg" alt=""/></li>
+                <li class="li1"><img src="images/35.jpg" alt=""/></li>
+                <li class="li1"><img src="images/36.jpg" alt=""/></li>
+                <li class="li1"><img src="images/37.png" alt=""/></li>
+                <li class="li1"><img src="images/38.png" alt=""/></li>
+                <li class="li1"><img src="images/39.png" alt=""/></li>
+                <li class="li1"><img src="images/40.png" alt=""/></li>
+                <li class="li1"><img src="images/41.png" alt=""/></li>
+                <li class="li1"><img src="images/42.png" alt=""/></li>
+                <li class="li1"><img src="images/43.png" alt=""/></li>
+                <li class="li1"><img src="images/44.png" alt=""/></li>
+                <li class="li1"><img src="images/44.png" alt=""/></li>
+                <li class="li1"><img src="images/45.png" alt=""/></li>
+                <li class="li1"><img src="images/46.png" alt=""/></li>
+                <li class="li1"><img src="images/47.png" alt=""/></li>
+                <li class="li1"><img src="images/48.png" alt=""/></li>
+                <li class="li1"><img src="images/49.png" alt=""/></li>
+                <li class="li1"><img src="images/50.png" alt=""/></li>
+                <li class="li1"><img src="images/51.png" alt=""/></li>
+                <li class="li1"><img src="images/52.png" alt=""/></li>
+                <li class="li1"><img src="images/31.png" alt=""/></li>
+            </ul>
+        </div>
+    </div>
+    <!--洞太/知识-->
+    <div class="f">
+        <div class="fa">
+            <h3>拍摄流程</h3>
+            <span>news</span>
+        </div>
+        <div class="fb">
+            <div class="process">
+                <ol class="process-items">
+                    <li class="active">第一步 1
+                    <em>just do it</em></li>
+                    <li>第二步 2
+                    <em>yesterday you said tomorrow</em></li>
+                    <li>第三步 3
+                    <em>just do it</em></li>
+                    <li>第四步 4
+                    <em>make your dreams come true</em></li>
+                </ol>
+                <canvas id="canvas" width="800" height="55"></canvas>
+            </div>
+            </div>
+            <script>
+            var process = $('.process');
+            var canvas = document.getElementById('canvas');
+            var ctx = canvas.getContext('2d');
+            
+            var SECTION_WIDTH = 200;
+            
+            var sections = [];
+            var create = function(start) {
+              var section = {
+                start: start,
+                width: SECTION_WIDTH,
+                height: 45,
+                hMax: 35,
+                hMod: 0,
+                progress: 0,
+                dot: {
+                  x: 0,
+                  y: 0
+                }
+              };
+              section.end = section.start + section.width;
+              section.dot.x = section.start + section.width/2;
+              section.dot.y = section.height;
+              sections.push(section);
+            };
+            
+            var draw = function(s) {
+              var wMod = s.width * 0.3;
+              ctx.beginPath();
+              ctx.moveTo(s.start, s.height);
+              ctx.bezierCurveTo(
+                s.start+wMod, s.height,
+                s.start+wMod, s.height - s.hMod,
+                s.start + s.width/2, s.height - s.hMod
+              );
+              ctx.bezierCurveTo(
+                s.end-wMod, s.height - s.hMod,
+                s.end-wMod, s.height,
+                s.end, s.height
+              );
+              ctx.lineWidth = 4;
+              ctx.strokeStyle = 'white';
+              ctx.stroke();
+              
+              ctx.beginPath();
+              ctx.fillStyle = 'white';
+              ctx.arc(s.dot.x, s.dot.y, 8, 0, Math.PI * 2);
+              ctx.fill();
+            };
+            
+            function quad(progress) {
+              return Math.pow(progress, 2);
+            }
+            function makeEaseOut(delta) { 
+              return function(progress) {
+                return 1 - delta(1 - progress);
+              }
+            }
+            var quadOut = makeEaseOut(quad);
+            
+            var bend = function(s) {
+              if(s.progress < s.hMax) {
+                var delta = quadOut(s.progress/s.hMax);
+                s.hMod = s.hMax*delta;
+                s.dot.y = s.height - s.hMax*delta;
+                s.progress++;
+              }
+            };
+            var reset = function(s) {
+              if(s.progress > 0) {
+                var delta = quadOut(s.progress/s.hMax);
+                s.hMod = s.hMax*delta;
+                s.dot.y = s.height - s.hMax*delta;
+                s.progress -= 2;
+              } else {
+                s.hMod = 0;
+                s.dot.y = s.height;
+                s.progress = 0;
+              }
+            };
+            
+            var currentSection = 0;
+            process.on('mousemove', function(event) {
+              var section = Math.floor((event.clientX - process.offset().left) / SECTION_WIDTH);
+              currentSection = section;
+              process.find('.active').removeClass('active');
+              process.find('li').eq(section).addClass('active');
+            });
+            
+            create(0);
+            create(200);
+            create(400);
+            create(600);
+            
+            var loop = function() {
+              ctx.clearRect(0, 0, canvas.width, canvas.height);
+              
+              sections.forEach(function(s, index) {
+                if(currentSection === index) {
+                  bend(s);
+                } else {
+                  reset(s);
+                }
+                draw(s);
+              });
+              
+              window.requestAnimationFrame(loop);
+            };
+            loop();
+            </script>
+            <div style="text-align:center;margin:50px 0; font:normal 14px/24px 'MicroSoft YaHei';">
+            </div>
+    </div>
+    <!--幽情体式-->
+    <div class="g">
+        <p>
+            友情链接： 北京美甲培训 浦东注册公司 宣传片 服装摄影 天津长途搬家公司
+            旅游婚纱摄影 拉萨拍婚纱照 美容院加盟 创意礼品网 厦门婚纱摄影 影视后期制作
+            汉服 福建卫生人才网 闭窗器 田园综合体 湖南考研辅导 文学论文 报销系统 深圳品牌设计
+            婚宴预订 地面投影 山东新闻 今日特价 郑州婚庆公司
+        </p>
+    </div>
+    <!--end前-->
+    <div class="h">
+        <div class="ha">
+            <img src="img/61.png" alt=""/>
+            <div class="hab">
+                <p>24X7 服务热线</p>
+                <span>158-1114-7343</span>
+                <span>183-1105-3263</span>
+                <span>139-8401-7015</span>
+            </div>
+        </div>
+        <div class="hb">
+            <img src="img/62.png" alt=""/>
+            <div class="hba">
+                <p>电子邮件</p>
+                <span>490687047@qq.com</span>
+            </div>
+        </div>
+        <div class="hc">
+            <img src="img/61.png" alt=""/>
+            <div class="hca">
+                <p>24X7 服务热线</p>
+                <span>158-1114-7343</span>
+                <span>183-1105-3263</span>
+                <span>139-8401-7015</span>
+            </div>
+        </div>
+    </div>
+    <!--END-->
+    <div class="i">
+        <div class="ia">
+            <div class="iaa">
+                <h3>公司介绍</h3>
+                        <span>北京慕格摄影是专注于商业产品、模特、企业宣传照、个人形象照等拍摄。
+                            公司坐落在朝阳区西大望路周庄三期A区14号楼18号。我们一直坚持追求探索的摄
+                            影态度，将每一个产品勾画成完美摄影艺术品。一直在努力创造超乎寻常的是时间感。
+                        <br/>
+                        北京慕格摄影吸纳的所有人才都是热爱摄影的年轻新锐摄影师、
+                            他们相信影像就是最大的力量，最高尚的艺术来源于生活!
+                        </span>
+            </div>
+            <div class="iab">
+                <h3>慕歌摄影</h3>
+                <ul>
+                    <li>公司简介</li>
+                    <li>案例展示</li>
+                    <li>服务流程</li>
+                    <li>联系我们</li>
+                </ul>
+            </div>
+            <div class="iac">
+                <h3>服务项目</h3>
+                <ul>
+                    <li>形象照拍摄</li>
+                    <li>产品拍摄</li>
+                    <li>全景拍摄</li>
+                </ul>
+            </div>
+            <div class="iad">
+                <img src="images/foot.png" alt=""/>
+            </div>
+        </div>
+    </div>
+	
+</body>
+</html>
